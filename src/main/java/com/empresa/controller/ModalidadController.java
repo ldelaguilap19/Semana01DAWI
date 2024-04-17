@@ -29,9 +29,9 @@ public class ModalidadController {
 		return lstSalida;
 	}
 	
-	@PostMapping
+	@PostMapping // ResponseEntity<?> devuelve cualquier tipo de dato
 	public ResponseEntity<?>  insertaModalidad(@RequestBody Modalidad obj){
-		List<String> lstSalida = new ArrayList<String>();
+		List<String> lstSalida = new ArrayList<String>();//el requestbody trnasforma el json en modalidad
 		
 		obj.setEstado(1);
 		obj.setFechaRegistro(new Date());

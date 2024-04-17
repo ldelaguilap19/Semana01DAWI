@@ -7,7 +7,7 @@ import com.empresa.entity.Modalidad;
 public interface ModalidadService {
 
 	public abstract List<Modalidad> listaModalidad();
-	public abstract Modalidad insertaModalidad(Modalidad obj);
+	public abstract Modalidad insertaModalidad(Modalidad obj); //ESTO PARA EL POST
 	
 	
 }

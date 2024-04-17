@@ -14,7 +14,7 @@ import lombok.Setter;
 @Table(name =  "deporte")
 public class Deporte {
 
-	@Id
+	@Id //Annotación específica
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idDeporte;
 	private String nombre;

@@ -44,7 +44,7 @@ public class Modalidad {
 	private Date fechaRegistro;
 	
 	@JsonFormat(shape = Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Lima")
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.TIMESTAMP) //Aqui se especifica el tipo de fecha (date, time o date+time)
 	private Date fechaActualizacion;
 	
 }
